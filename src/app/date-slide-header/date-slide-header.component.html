@@ -1,0 +1,19 @@
+<body class="container">
+    <div class="{{apis.cssKeyword}}date_slide_header">
+        <span class="{{apis.cssKeyword}}date_slide_left_arrow float_left">
+            <img (click)="previousDate()" src="/assets/images/slider_prev_arrow.png" alt="previous"/>
+        </span>
+            
+        <ul class="{{apis.cssKeyword}}date_slide_list_arrow {{apis.cssKeyword}}date_slide_list {{apis.cssKeyword}}date_slide_list float_left">
+            <li class="{{apis.cssKeyword}}date_slide_list_li">
+                <div *ngFor="let date of dateArray">
+                    <a [routerLink]="'/'+apis.urlKeyword +'/appointments/'+ datePipe.transform(date, 'yyyy-MM-dd')">{{ date | date:'E dd/MM' }}</a>
+                </div>
+            </li>
+        </ul>
+        
+        <span class="{{apis.cssKeyword}}date_slide_right_arrow float_right">
+            <img (click)="nextDate()" src="/assets/images/slider_next_arrow.png" alt="next"/>
+        </span>
+    </div>
+</body>
