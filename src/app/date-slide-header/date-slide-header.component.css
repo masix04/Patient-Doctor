@@ -8,7 +8,7 @@
 {
     background-color: #219e26;
     height: 50px;
-    margin: 4px 200px;
+    margin: 4px 12%;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* .psc_date_slide_header
@@ -25,17 +25,17 @@
 .psc_date_slide_left_arrow, .psc_date_slide_right_arrow
 {
     background-color: rgb(27, 88, 27);
-    width:50px;
+    width:5%;
     height:50px;
     /* justify-content:center; */
 }
-.psc_date_slide_list_arrow
+/* .psc_date_slide_list
 {
-    background-color: rgb(27, 88, 27);
-    width:50px;
+    background-color: rgb(137, 165, 137);
+    width:0;
     height:50px;
     justify-content:center;
-}
+} */
 .psc_date_slide_left_arrow img
 {
     padding:15px 20px 13px 17px;
@@ -46,7 +46,7 @@
 }
 .psc_date_slide_list
 {
-    width:87%;
+    width:89.77%;
     border-right:1px solid #219e26;
     border-left:1px solid #219e26;
     background:#219e26;
@@ -85,8 +85,12 @@
 {
     text-decoration: none;
     font-weight: 700;
-    color:rgb(150, 98, 1);
+    color:rgb(119, 79, 5);
     font-size:20px;
+}
+.psc_date_slide_list li div a:hover
+{
+    color:rgb(221, 152, 23);
 }
 .float_left
 {
