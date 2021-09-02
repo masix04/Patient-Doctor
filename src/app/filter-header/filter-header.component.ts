@@ -15,6 +15,10 @@ export class FilterHeaderComponent implements OnInit{
     {
 
     }
+    getAppointments()
+    {
+        
+    }
     ngOnInit()
     {
 

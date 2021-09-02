@@ -1,6 +1,6 @@
 <body class="container">
 <div class="{{apis.cssKeyword}}filter_header">
-    <p class="show-center">Patient-Doctor Appointments</p>
+    <p class="show-center"><strong>Patient-Doctor Appointments</strong></p>
     <div class="{{apis.cssKeyword}}filter_select">
         <select>
             <option value="">Ages</option>
@@ -31,7 +31,7 @@
             <option value="11">November</option>
             <option value="12">December</option>
         </select>
-        <button>
+        <button (click)=getAppointments()>
             <strong>Filter</strong>
         </button>
     </div>
